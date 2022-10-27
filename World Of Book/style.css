@@ -37,8 +37,9 @@ h1 {
 #contenido {
     background: linear-gradient(-45deg, #ee7752, #509acc, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-    height: 500px;
+    height: 100%;
     animation: 15s ease gradient;
+    animation-iteration-count: infinite;
 }
 
 @keyframes gradient {
@@ -64,6 +65,7 @@ h1 {
 }
 
 #text-principal {
+    font-family: 'Fuzzy Bubbles', cursive;
     font-size: 30px;
     justify-content: baseline;
     position: relative;
@@ -96,6 +98,7 @@ h1 {
 }
 
 #fr-f {
+    font-family: 'Caveat', cursive;
     position: absolute;
     top: 460px;
     left: 580px;
@@ -107,8 +110,53 @@ h1 {
     height: 200px;
 }
 
-@media screen and (max-height:793px) {
+@media screen and (max-height:794px) {
+
+    body {
+        height: 100%;
+        overflow-y: hidden;
+    }
+
     #libros {
-        top:200px;
+        top: 209px;
+    }
+
+    #fr-f {
+        position: absolute;
+        top: 560px;
+        left: 500px;
+    }
+
+    #text-principal {
+        top:180px;
+    }
+
+    #bienvenida {
+        font-size: 50px;
+        top:70px;
+    }
+
+    #button_1 {
+        top: 130px;
+    }
+
+    #contenido {
+        background: linear-gradient(-45deg, #ee7752, #509acc, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        height: 631px;
+        animation: 15s ease gradient;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
 }

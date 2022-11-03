@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>World Of Book</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <script src="/javascript.js"></script>
+</head>
+
+<body>
+  <main>
+    <nav id="menu_p">
+      <center>
+        <div class="item" id="item1">
+          <h1 id="ti_principal">WORLD OF BOOK</h1>
+        </div>
+        <div class="item" id="item2">
+          <img id="read" src="imagenes/read.png" alt="persona leyendo">
+        </div>
+      </center>
+    </nav>
+    <div id="contenido">
+      <p id="bienvenida">Bienvenid@s</p>
+      <!-- eliminar despues el a cuando se tenga el menu -->
+      <center>
+        <p id="text-principal">En World of Books queremos incentivar la lectura de los usuarios ofreciendo libros
+          virtuales de facil acceso a toda la
+          institución</p>
+        <button type="button" id="button_1" onclick="Abrirpopupmenu()">Entrar</button>
+        <div id="popup">
+          <div id="main">
+            <img src=""> 
+            <p id="javas_pop_titulo">Categorias</p>
+            <div id="cat_men">
+              <a href="Terror/terror.html">
+                <div id="terror_mp">
+                  <p id="text_cm">Terror</p>
+                </div>
+              </a>
+              <a href="Fantasia/Fantasia.html">
+                <div id="Fantasia_mp">
+                  <p id="text_cm">Fantasia</p>
+                </div>
+              </a>
+              <a href="Accion/Accion.html">
+                <div id="accion_mp">
+                  <p id="text_cm">Accion</p>
+                </div>
+              </a>
+              <a href="Romance/Romance.html">
+                <div id="Romance_mp">
+                  <p id="text_cm">Romance</p>
+                </div>
+              </a>
+              <a href="Comics/Comics.html">
+                <div id="Comics_mp">
+                  <p id="text_cm">Comics</p>
+                </div>
+              </a>
+              <a href="Audio-libros/Audio-libros.html">
+                <div id="Cientificos_mp">
+                  <p id="text_cm">Audio-libros</p>
+                </div>
+              </a>
+              <a href="Educativos/Educativos.html">
+                <div id="Cientificos_mp">
+                  <p id="text_cm">Educativos</p>
+                </div>
+              </a>
+              <a href="Novelas/Novelas.html">
+                <div id="Novelas_mp">
+                  <p id="text_cm">Novelas</p>
+                </div>
+              </a>
+            </div>
+            <div id="cerrar_popup" onclick="CerrarPopupMenu()">
+              <p>X</p>
+            </div>
+          </div>
+        </div>
+        <h2 id="fr-f">LA BIBLIOTECA DIGITAL PARA TODOS</h2>
+      </center>
+      <img id="libros" src="imagenes/book-stack.png" alt="imagen de libros">
+    </div>
+  </main>
+</body>
+
+</html>
